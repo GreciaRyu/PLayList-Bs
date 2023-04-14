@@ -14,36 +14,53 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="row">
-            <nav class="col-xl-12 col-12">
-                <div>
-                <ul>
-                    <li>
-                        <a href="index.html"> <img src="../images/logo_playlist-01.png" 
-                            alt="Logo" width="100px" height="40px"></a>
-                    </li>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="categorias.html">Categorias</a>
-                    </li>
-                    <li>
-                        <a href="coleccion.html">Colección</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                    <li>
-                        <!--colocar el perfil hasta la derecha de la navbar, quitar texto-->
-                        <a href="perfil.html">
-                        <img src="../images/hamster_gamer.jpg" 
-                        alt="Perfil" width="60" height="60"></a>
-                    </li>
+   <header class="sticky-top">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
+            <div class="container-fluid mx-4">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              <a class="navbar-brand" href="../index.html">
+               <img src="../images/logo_playlist-01.png" 
+                    alt="Logo" width="100px" height="40px"></a>
+             <div class="mb-2 mb-lg-0 d-flex order-last">
+                <div class="d-flex align-items-center">
+                    <a href="../pages/perfil.html">
+                    <img src="../images/hamster_gamer.jpg" 
+                        alt="Perfil" width="40" height="40"></a>
+                </div>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/categorias.html">Categorias</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" 
+                    aria-expanded="false">
+                      Colección
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="../pages/coleccion.html">Mi colección</a></li>
+                      <li><a class="dropdown-item" href="#">Lista de deseos</a></li>
+                      <li><a class="dropdown-item" href="#">Archivados</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+                  </li>
                 </ul>
-            </nav>
-        </header>
+              </div>
+            
+            </div> 
+          </nav>
+    </header>
+    <div class="container">
         <main>
             <div class="row">
                 <aside class="col-xl-3 col-12">
