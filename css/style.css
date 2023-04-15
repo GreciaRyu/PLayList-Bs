@@ -10728,9 +10728,49 @@ body {
 body nav {
   background-color: rgb(156, 39, 176);
 }
+body nav div div img {
+  border-radius: 50%;
+  border: 0.1rem solid rgb(20, 20, 20);
+  width: 3rem;
+  height: 3rem;
+}
+body main aside img {
+  border-radius: 50%;
+  border: 0.1rem solid rgb(20, 20, 20);
+  width: 3rem;
+  height: 3rem;
+}
+body main aside em {
+  color: rgb(190, 255, 136);
+}
+body main div h6, body main div .h6 {
+  color: rgb(118, 255, 3);
+}
+body main section {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+body main section img {
+  border-radius: 2rem;
+}
+body main footer div p {
+  color: rgb(118, 255, 3);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem, 1.5rem;
+}
 
 .emphasis-color {
   color: rgb(190, 255, 136);
+}
+
+.secondary-color {
+  color: rgb(118, 255, 3);
 }
 
 /*# sourceMappingURL=style.css.map */

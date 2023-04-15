@@ -1,7 +1,29 @@
-
 body {font-family: "Roboto"; background-color: rgb(20, 20, 20); color:$body;
-    nav {background-color: $primary;}
+    nav {background-color: $primary;
+        div{
+            div {
+                img {@include round-profile-img;}
+            }
+        }
+    }
+    main{
+        aside{
+            img {@include round-profile-img;} 
+            em {color:$emphasis;}
+        }
+        div {
+            h6 {color:$secondary;}
+        }
+        section {display: flex; justify-content:space-evenly; align-content: center;
+            img {border-radius: 2rem};
+        }
+        footer {
+            div{
+                p {color:$secondary;}
+            }
+        }
+    }
 }
-
+.section-header {@include flex-between-center; margin: 1rem, 1.5rem;}
 .emphasis-color {color:$emphasis;}
-
+.secondary-color {color:$secondary;}
