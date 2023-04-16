@@ -1,0 +1,8 @@
+.main-card {padding: 0.5rem; min-width: 40%; width: 100%; height: auto;
+             border-radius: 1rem; background-color:$primary;
+            img {border-radius: 1rem; float: left; margin: 0.3rem; width: 4rem; height: 5rem;}
+            p {margin:0.2rem}
+            a {text-decoration: none; color:$secondary;}
+}
+.card-head {color:$secondary; display: flex; align-items: center;}
+.card-footer {color:$secondary; display: flex; justify-content: space-between; padding: 0 1rem;}
