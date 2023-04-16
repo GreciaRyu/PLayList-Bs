@@ -1,11 +1,16 @@
 body {font-family: "Roboto"; background-color: rgb(20, 20, 20); color:$body; background: radial-gradient(circle at bottom, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 51%);
-    nav {background-color: $primary;
-        div{
-            div {
-                img {@include round-profile-img;}
+    header
+        nav {background-color: $primary;
+            div{ 
+                div {
+                    img {@include round-profile-img;}
+                }
             }
         }
-    }
+        section {display: flex; justify-content: center;align-items: center;
+                 img {min-width: 20%; height: 60%; width: 100%; display: flex; flex-shrink: 4}
+        }
+
     main{ margin-top: 1.5rem;
         aside{
             div{display:inline-block; align-items: center;
@@ -14,18 +19,19 @@ body {font-family: "Roboto"; background-color: rgb(20, 20, 20); color:$body; bac
             img {float:left; margin:0.2rem}
             a {text-decoration: none; color:$secondary;}
             ul {
-                li {list-style: none;}
-                
+                li {list-style: none;} 
             }
             img {@include round-profile-img;} 
             em {color:$emphasis;}
         }
-        div {
+        div { margin:0.5rem 0;
             h6 {color:$secondary;}
+            
         }
         .section-header {@include flex-between-center; margin: 1rem, 1.5rem;;}
         section {@include flex-evenly-center;
-            img {border-radius: 2rem;display:flex; flex-shrink: 4;}
+            img {border-radius: 2rem; padding: 0.5rem; min-width: 20%;
+                height: 55%; width: 45%; display: flex; flex-shrink: 4}
         }
     }
         footer {

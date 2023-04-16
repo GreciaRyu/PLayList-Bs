@@ -6,3 +6,9 @@
 }
 .card-head {color:$secondary; display: flex; align-items: center;}
 .card-footer {color:$secondary; display: flex; justify-content: space-between; padding: 0 1rem;}
+
+.profile-cards {@include flex-evenly-center; margin: 1rem, 1.5rem;}
+.simple-card {padding: 0.5rem; width: 45%; height: auto;
+    border-radius: 1rem; background-color:$primary;display:inline-block;
+    h3,h5 { text-align: center;}
+}

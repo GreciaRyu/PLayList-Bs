@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=operagx">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+    <title>PlayList-Perfil</title>
+    <meta name="description" content="PlayList, el lugar para categorizar tu colección de videojuegos,
+    en tu perfil puedes mostrarle a tus amigos que juegos te han gustado más y cuales no mucho,
+    muestra tambien tú lista de deseos, a todos nos gutan los regalos">
+    <meta name="keywords" content="PlayList,videojuegos, colección de juegos, colección de videojuegos, nientendo, 
+    PlayStation, Xbox, Steam, games, videogames">
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -15,7 +20,8 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="sticky-top">
+    <header >
+        <div class="sticky-top">
         <nav class="navbar navbar-expand-xl navbar-dark">
             <div class="container-fluid mx-4">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
@@ -59,7 +65,11 @@
               </div>
             
             </div> 
-          </nav>
+        </nav>
+        </div>
+        <section>
+            <img src="../images/profile_bckground.png" alt="profile background">
+        </section>
     </header>
     <div class="container">
         <main>
@@ -77,31 +87,37 @@
                     <h2>Seguidores (43)</h2>
                 </aside>
                 <div class="col-xl-6 col-12">
-                        <div> 
+                        <div class="profile-cards"> 
                             <!--Agregar una tabla para organizar contenido de este div-->
-                            <h3>
-                                Jugados
-                            </h3>
-                            <p>
-                                58
-                            </p>
-                            <h3>
-                                100% Completos
-                            </h3>
-                            <p>
-                                12
-                            </p>
+                            <div class="simple-card">
+                                <h5>Jugados</h5>
+                                <h3>58</h3>
+                            </div>
+                            <div class="simple-card">
+                                <h5>100% Completos</h5>
+                                <h3>12</h3>
+                            </div>
+                        </div>
+                        <div class="profile-cards">
+                            <div class="simple-card">
+                                <h5>Plataforma favorita</h5>
+                                <h3>PC</h3>
+                            </div>
+                            <div class="simple-card">
+                                <h5>Trofeos Obtenidos</h5>
+                                <h3>256</h3>
+                            </div>
                         </div>
                     <div class="section-header">
                         <h1><strong>Favoritos</strong></h1>
                         <h6>ver mas</h6>
                     </div>
-                        <section>
-                            <img src="../images/portadas de juegos/god_of_war_ragnarok.jpg" alt="God of war: Ragnarok">
-                            <img src="../images/portadas de juegos/lii_true.jpg" alt="Life is Strange: True Colors">
-                            <img src="../images/portadas de juegos/stray.jpg" alt="Stray">
-                            <img src="../images/portadas de juegos/bayonetta3.jpg" alt="Bayonetta 3">
-                        </section>
+                    <section>
+                        <img src="../images/portadas de juegos/horizon.jpg" alt="Horizon: Forbidden West">
+                        <img src="../images/portadas de juegos/spiderman_miles.jpg" alt="spiderman_miles">
+                        <img src="../images/portadas de juegos/destiny.jpg" alt="Destiny">
+                        <img src="../images/portadas de juegos/lis.jpg" alt="Live is Strange">
+                    </section>
                 </div>
                 <aside class="col-xl-3 col-12 d-none d-sm-block">
                     <ul>
