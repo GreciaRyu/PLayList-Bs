@@ -35,6 +35,9 @@ body {font-family: "Roboto"; background-color: rgb(20, 20, 20); color:$body;
             img {border-radius: 2rem; padding: 0.5rem; min-width: 20%;
                 height: 55%; width: 45%; display: flex; flex-shrink: 4}
         }
+        a:active {color: #32CB00;text-shadow: 0 0 0.5rem #32CB00;}
+        a:hover {color: #32CB00;}
+        a:visited {color: #248f00;}
         
     }
         footer {

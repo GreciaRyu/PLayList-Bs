@@ -10811,6 +10811,26 @@ form input[type=number]:focus, form input[type=date]:focus {
 form input[type=number]:hover, form input[type=date]:hover {
   box-shadow: 0 0 0.5rem rgb(118, 255, 3);
 }
+form input[type=radio]:after {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: rgb(244, 217, 249);
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 0.2rem solid white;
+}
+form input[type=radio]:checked:after {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #32CB00;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 0.2rem solid white;
+}
 form textarea {
   min-width: 60%;
   height: 30%;
@@ -10858,6 +10878,11 @@ form input[type=button]:focus, form input[type=submit]:focus, form input[type=re
 }
 form input[type=button]:hover, form input[type=submit]:hover, form input[type=reset]:hover {
   box-shadow: 0 0 0.5rem rgb(118, 255, 3);
+}
+form input[type=button]:active, form input[type=submit]:active, form input[type=reset]:active {
+  color: #000;
+  background-color: #32CB00;
+  box-shadow: 0 0 0.5rem #32CB00;
 }
 
 body {
@@ -10942,6 +10967,16 @@ body main section img {
   width: 45%;
   display: flex;
   flex-shrink: 4;
+}
+body main a:active {
+  color: #32CB00;
+  text-shadow: 0 0 0.5rem #32CB00;
+}
+body main a:hover {
+  color: #32CB00;
+}
+body main a:visited {
+  color: #248f00;
 }
 body footer div span {
   display: flex;
