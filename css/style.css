@@ -10812,8 +10812,10 @@ form input[type=number]:hover, form input[type=date]:hover {
   box-shadow: 0 0 0.5rem rgb(118, 255, 3);
 }
 form input[type=radio]:after {
-  width: 0.5rem;
-  height: 0.5rem;
+  position: relative;
+  top: -3.5px;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
   background-color: rgb(244, 217, 249);
   content: "";
@@ -10822,8 +10824,10 @@ form input[type=radio]:after {
   border: 0.2rem solid white;
 }
 form input[type=radio]:checked:after {
-  width: 0.5rem;
-  height: 0.5rem;
+  position: relative;
+  top: -3.5px;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
   background-color: #32CB00;
   content: "";
